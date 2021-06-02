@@ -3,7 +3,7 @@
 battery=`acpi -b | cut -f2 -d "," | tr "%" " "`
 charging=`acpi -b | grep -c -e Charging -e Full`
 
-if [[ $charging -eq 1 && $battery -gt 97 ]]
+if [[ $charging -eq 1 && $battery -gt 80 ]]
 then
     export DISPLAY=:0 
     export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus

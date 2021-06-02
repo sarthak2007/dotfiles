@@ -114,14 +114,16 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias gc="/usr/bin/google-chrome"
-alias sarthak="~/sarthak.sh"
-alias g++="g++ -std=c++14"
-# alias gcc="gcc"
+alias g++="g++ -std=c++17"
 alias gmm="gcc myshell.c -L/usr/local/lib -I/usr/local/include -lreadline "
 alias sql="mysql -u root -p"
 alias godinst="sudo apt-get install"
 alias godupd="sudo apt-get update"
 alias godupg="sudo apt-get upgrade"
+
+# connect to IITK VPN
+alias connect_iitk="/opt/forticlient-sslvpn/64bit/forticlientsslvpn_cli --server gateway.iitk.ac.in:443 --vpnuser ssinghal" 
+
 # alias python="usr/bin/python2"
 export ANDROID_HOME=$HOME/android-sdk-linux
 export ANDROID_SDK_ROOT=$HOME/android-sdk-linux
@@ -153,7 +155,7 @@ setopt RM_STAR_WAIT
 # Function to connect to wifi with first argument as SSID
 function connect_wifi(){
     if [ `nmcli d | grep wlp5s0 | tr -s " " | cut -d" " -f3` = 'connected' ]; then  
-	nmcli d disconnect wlp5s0
+      nmcli d disconnect wlp5s0
     fi
     nmcli c up "$1"
 }

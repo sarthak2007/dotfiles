@@ -1,0 +1,25 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+alt+up",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+    {
+        "key": "ctrl+down",
+        "command": "editorScroll",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "revealCursor": true
+        }
+    },
+    {
+        "key": "ctrl+up",
+        "command": "editorScroll",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "revealCursor": true
+        }
+    }
+]

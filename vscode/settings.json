@@ -1,0 +1,34 @@
+{
+    "cmake.configureOnOpen": true,
+    "files.autoSave": "afterDelay",
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
+    "editor.rulers": [120],
+    "window.menuBarVisibility": "toggle",
+    "editor.cursorStyle": "line",
+    "workbench.colorTheme": "Monokai",
+    "files.associations": {
+        "*.cu": "cpp"
+    },
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#78797c",
+        // "tab.activeBorder": "#4888e9",
+        "tab.activeBackground": "#000000"
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "window.zoomLevel": 1,
+    // "explorer.autoReveal": false
+}

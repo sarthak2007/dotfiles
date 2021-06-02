@@ -1,0 +1,10 @@
+[Unit]
+Description=PowerTOP tuning
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'echo auto > /sys/bus/pci/devices/0000:02:00.0/power/control'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
